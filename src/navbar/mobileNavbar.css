@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+
+    a:hover {
+        color: black !important;
+    }
+
+    #navItems {
+        display: none;
+        text-align: center;
+        transition: transform 500ms ease-in-out;
+    }
+
+    #navItems li {
+        padding: 1rem;
+        border-bottom: 2px solid white;
+        transition: background 500ms ease-in-out;
+    }
+
+    #navItems li:hover {
+        background-color: aqua;
+    }
+
+    .Logo {
+        margin-left: 10px;
+    }
+
+    .DropDown {
+        position: absolute;
+        display: flex;
+        right: 5px;
+        top: 10px;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .DropDown:hover {
+        cursor: pointer;
+    }
+
+    .Bar {
+        width: 25px;
+        height: 4px;
+        margin: 2px;
+        background-color: white;
+    }
+
+
+
+}
