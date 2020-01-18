@@ -53,7 +53,7 @@ class Navbar extends Component {
         return (
             <Router>
                 <nav id='navbar'>
-                    <img className="Logo" src={logo} alt='My Logo' />
+                    <Link to='/'><img className="Logo" src={logo} alt='My Logo' /></Link>
                     <ul id='navItems'>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
