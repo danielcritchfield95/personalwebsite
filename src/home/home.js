@@ -65,7 +65,7 @@ class Home extends Component {
             text = paragraph.join("");
         }
 
-        setTimeout(() => {
+        this.typing = setTimeout(() => {
             this.setState({
                 renderText: renderText,
                 deleteText: deleteText,
@@ -77,9 +77,13 @@ class Home extends Component {
             if (changingContent !== null && changingContent !== undefined) {
                 changingContent.innerHTML = text;
             }
-        }, 200);
+        }, 100);
 
         renderText = !renderText;
+    }
+
+    componentWillUnmount() {
+        clearTimeout(this.typing);
     }
 
     render() {
