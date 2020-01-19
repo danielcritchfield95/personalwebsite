@@ -1,0 +1,22 @@
+#Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#HomeLogo {
+    margin: auto;
+}
+
+#HomeName {
+    margin: auto;
+    font-size: 4rem;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.ChangingContent {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2rem;
+    margin: auto;
+}

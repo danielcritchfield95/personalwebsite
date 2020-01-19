@@ -5,6 +5,10 @@ import {
     Route,
     Link
 } from 'react-router-dom';
+import Home from '../home/home';
+import About from '../about/about';
+import Experience from '../experience/experience';
+import Projects from '../projects/projects';
 
 import logo from '../images/DanClogo.png';
 
@@ -49,6 +53,12 @@ class Navbar extends Component {
         window.addEventListener("resize", this.updateNavItems);
     }
 
+    notFound() {
+        return (
+            <h1>404 Page Not Found</h1>
+        );
+    }
+
     render() {
         return (
             <Router>
@@ -57,7 +67,8 @@ class Navbar extends Component {
                     <ul id='navItems'>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/experience">Experience</Link></li>
+                        <li><Link to="/projects">Projects</Link></li>
                     </ul>
                     <div className="DropDown" onClick={this.handleDropDown}>
                         <div className='Bar' id='bar1'></div>
@@ -66,15 +77,11 @@ class Navbar extends Component {
                     </div>
                 </nav>
                 <Switch>
-                    <Route path="/">
-                        {/* <Home /> */}
-                    </Route>
-                    <Route path="/about">
-                        {/* <About /> */}
-                    </Route>
-                    <Route path="/contact">
-                        {/* <Contact /> */}
-                    </Route>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/experience" component={Experience} />
+                    <Route path="/projects" component={Projects} />
+                    <Route component={this.notFound} />
                 </Switch>
             </Router>
         );

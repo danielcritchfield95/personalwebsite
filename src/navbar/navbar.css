@@ -1,7 +1,10 @@
 #navbar {
+    position: -webkit-sticky;
     position: sticky;
+    top: 0;
     z-index: 1;
     background-color: #454444;
+    opacity: 90%;
 }
 
 #navItems {
@@ -27,7 +30,7 @@
 }
 
 .Logo:hover {
-    animation: hoverAnimation 1s linear;
+    animation: hoverAnimation 1s linear ;
 }
 
 @keyframes hoverAnimation {
