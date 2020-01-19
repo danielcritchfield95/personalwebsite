@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    NavLink
 } from 'react-router-dom';
 import Home from '../home/home';
 import About from '../about/about';
@@ -59,28 +59,32 @@ class Navbar extends Component {
         );
     }
 
+    shouldComponentUpdate() {
+        return false;
+    }
+
     render() {
         return (
             <Router>
                 <nav id='navbar'>
-                    <Link to='/'><img className="Logo" src={logo} alt='My Logo' /></Link>
+                    <NavLink exact={true} to='/' activeClassName='ActiveLink'><img className="Logo" src={logo} alt='My Logo' /></NavLink>
                     <ul id='navItems'>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/experience">Experience</Link></li>
-                        <li><Link to="/projects">Projects</Link></li>
+                        <li><NavLink exact={true} to='/' activeClassName='ActiveLink'>Home</NavLink></li>
+                        <li><NavLink to='/about' activeClassName='ActiveLink' >About</NavLink></li>
+                        <li><NavLink to='/experience' activeClassName='ActiveLink'>Experience</NavLink></li>
+                        <li><NavLink to='/projects' activeClassName='ActiveLink'>Projects</NavLink></li>
                     </ul>
-                    <div className="DropDown" onClick={this.handleDropDown}>
+                    <div className='DropDown' onClick={this.handleDropDown}>
                         <div className='Bar' id='bar1'></div>
                         <div className='Bar'id='bar2'></div>
                         <div className='Bar' id='bar3'></div>
                     </div>
                 </nav>
                 <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route path="/experience" component={Experience} />
-                    <Route path="/projects" component={Projects} />
+                    <Route exact path='/' component={Home} />
+                    <Route path='/about' component={About} />
+                    <Route path='/experience' component={Experience} />
+                    <Route path='/projects' component={Projects} />
                     <Route component={this.notFound} />
                 </Switch>
             </Router>

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 #HomeLogo {
@@ -11,7 +11,7 @@
 
 #HomeName {
     margin: auto;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: "Courier New", Courier, monospace;
 }
 
@@ -19,4 +19,48 @@
     font-family: "Courier New", Courier, monospace;
     font-size: 2rem;
     margin: auto;
+}
+
+#Intro {
+    display: grid;
+    grid-template-columns: auto auto; 
+}
+
+.Item {
+    width: 100%;
+    height: 90vh;
+}
+
+.Item img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.CenteredDescription {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CenteredDescription p:first-of-type {
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.CenteredDescription p {
+    padding: 50px;
+}
+
+.CenteredDescription button {
+    margin: 50px;
+    width: 120px;
+    height: 40px;
+    background-color: dodgerblue;
+}
+
+.CenteredDescription button a {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
 }

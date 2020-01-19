@@ -30,7 +30,7 @@
 }
 
 .Logo:hover {
-    animation: hoverAnimation 1s linear ;
+    animation: hoverAnimation 1s linear;
 }
 
 @keyframes hoverAnimation {
@@ -47,4 +47,9 @@
 
 .DropDown {
     display: none;
+}
+
+.ActiveLink {
+    pointer-events: none;
+    color: aqua !important;
 }
