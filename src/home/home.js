@@ -111,6 +111,11 @@ class Home extends Component {
         window.scrollTo(0, intro.offsetTop - 90);
     }
 
+    scrollToWork() {
+        const work = document.querySelector('#Work');
+        window.scrollTo(0, work.offsetTop - 90);
+    }
+
     render() {
         return (
             <div>
@@ -125,9 +130,9 @@ class Home extends Component {
                         <div className='ChangingContent'>
                             {this.typeContent()}
                         </div>
-                        <div className='DownArrow'>
-                            <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToIntro}/>
-                        </div>
+                    </div>
+                    <div className='DownArrow' id='HomeDownArrow'>
+                        <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToIntro} />
                     </div>
                 </Container>
                 <Container>
@@ -145,6 +150,14 @@ class Home extends Component {
                                 <button><i><a href='/about'>Read More</a></i></button>
                             </div>
                         </div>
+                    </div>
+                    <div className='DownArrow' id='WorkDownArrow'>
+                        <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToWork} />
+                    </div>
+                </Container>
+                <Container>
+                    <div id='Work'>
+                        <h1>Work</h1>
                     </div>
                 </Container>
             </div>

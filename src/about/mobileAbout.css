@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+
+    .About {
+        display: flex;
+        flex-direction: column;
+        top: 5px;
+    }
+
+    .AboutContent p, h3 {
+        padding: 10px 5px;
+        margin: 10px;
+    }
+}

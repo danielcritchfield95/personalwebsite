@@ -59,6 +59,10 @@ class Navbar extends Component {
         );
     }
 
+    handleLogoClick() {
+        window.scrollTo(0, 0);
+    }
+
     shouldComponentUpdate() {
         return false;
     }
@@ -67,9 +71,9 @@ class Navbar extends Component {
         return (
             <Router>
                 <nav id='navbar'>
-                    <NavLink exact={true} to='/' activeClassName='ActiveLink'><img className="Logo" src={logo} alt='My Logo' /></NavLink>
+                    <img className="Logo" src={logo} alt='My Logo' onClick={this.handleLogoClick}/>
                     <ul id='navItems'>
-                        <li><NavLink exact={true} to='/' activeClassName='ActiveLink'>Home</NavLink></li>
+                        <li><NavLink exact={true} to='/' activeClassName='ActiveLink' >Home</NavLink></li>
                         <li><NavLink to='/about' activeClassName='ActiveLink' >About</NavLink></li>
                         <li><NavLink to='/experience' activeClassName='ActiveLink'>Experience</NavLink></li>
                         <li><NavLink to='/projects' activeClassName='ActiveLink'>Projects</NavLink></li>
