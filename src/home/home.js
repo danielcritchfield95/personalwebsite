@@ -6,18 +6,29 @@ import './mobileHome.css';
 
 import Logo from '../images/DanClogoMedium.png';
 import Me from '../images/DanC.png';
+import DownArrow from '../images/DownArrow.png';
 
 class Home extends Component {
 
     constructor(props) {
         super(props);
 
+        this.words = [
+            'Software Engineer...'.split(''),
+            'Java...'.split(''),
+            'Spring Boot...'.split(''),
+            'JUnit...'.split(''),
+            'Mockito...'.split(''),
+            'Python...'.split(''),
+            'SQL...'.split(''),
+            'JavaScript...'.split(''),
+            'React...'.split(''),
+            'HTML...'.split(''),
+            'CSS...'.split(''),
+            'Selenium...'.split('')
+        ];
+
         this.state = {
-            letters: 'Software Engineer...'.split(''),
-            letters1: 'Java...'.split(''),
-            letters2: 'Python...'.split(''),
-            letters3: 'JavaScript...'.split(''),
-            letters4: 'React...'.split(''),
             renderText: false,
             deleteText: false,
             i: 0,
@@ -27,13 +38,7 @@ class Home extends Component {
     }
 
     typeContent = () => {
-        const words = [
-            this.state.letters,
-            this.state.letters1,
-            this.state.letters2,
-            this.state.letters3,
-            this.state.letters4
-        ];
+        const words = this.words;
         let text = '';
         let renderText = this.state.renderText;
         let deleteText = this.state.deleteText;
@@ -101,6 +106,11 @@ class Home extends Component {
         clearTimeout(this.typing);
     }
 
+    scrollToIntro() {
+        const intro = document.querySelector('#Intro');
+        window.scrollTo(0, intro.offsetTop - 90);
+    }
+
     render() {
         return (
             <div>
@@ -114,6 +124,9 @@ class Home extends Component {
                         </div>
                         <div className='ChangingContent'>
                             {this.typeContent()}
+                        </div>
+                        <div className='DownArrow'>
+                            <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToIntro}/>
                         </div>
                     </div>
                 </Container>
