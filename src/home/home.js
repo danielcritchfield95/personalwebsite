@@ -143,15 +143,17 @@ class Home extends Component {
                         <div className='Item'>
                             <div className='CenteredDescription'>
                                 <p>About Me</p>
-                                <p>I’m a computer engineering graduate from the University
+                                <p>
+                                    I’m a computer engineering graduate from the University
                                     of a Pittsburgh with a focus on software engineering.
                                     I enjoy being a full stack developer, and I am always
-                                    looking to learn and work with new technologies.</p>
+                                    looking to learn and work with new technologies.
+                                </p>
                                 <button><i><a href='/about'>Read More</a></i></button>
                             </div>
                         </div>
                     </div>
-                    <div className='DownArrow' id='WorkDownArrow'>
+                    <div className='DownArrow' id='IntroDownArrow'>
                         <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToWork} />
                     </div>
                 </Container>
