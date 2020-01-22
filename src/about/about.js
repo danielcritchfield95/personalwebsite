@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '../container/container';
+import Footer from '../footer/footer';
 
 import './about.css';
 import './mobileAbout.css';
@@ -7,7 +8,6 @@ import './mobileAbout.css';
 import ProfessionalMe from '../images/ProfessionalMe.png';
 
 const About = () => {
-
 
     return (
         <Container>
@@ -42,9 +42,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <footer className='footer'>
-                test
-            </footer>
+            <Footer />
         </Container>
     );
 }

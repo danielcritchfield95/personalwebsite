@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .Footer {
+        position: relative;
+        flex-direction: column;
+        bottom: 0; 
+        margin: 0;
+    }
+
+}

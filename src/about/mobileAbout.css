@@ -6,8 +6,13 @@
         top: 5px;
     }
 
+    .AboutContent {
+        overflow: auto;
+    }
+
     .AboutContent p, h3 {
         padding: 10px 5px;
         margin: 10px;
     }
+
 }

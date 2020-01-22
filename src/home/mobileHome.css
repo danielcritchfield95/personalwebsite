@@ -18,7 +18,7 @@
     }
 
     .Container {
-        overflow: scroll;
+        overflow: auto;
     }
 
 }

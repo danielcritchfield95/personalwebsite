@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Container from '../container/container';
+import Footer from '../footer/footer';
 
 import './home.css';
 import './mobileHome.css';
@@ -162,6 +163,7 @@ class Home extends Component {
                         <h1>Work</h1>
                     </div>
                 </Container>
+                <Footer />
             </div>
         );
     }
