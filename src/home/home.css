@@ -1,8 +1,22 @@
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+     }
+}
+
 #Home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 200px;
+    animation-duration: 1s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s; 
+    animation-iteration-count: 1; 
+    animation-name: slideInFromTop;
 }
 
 #HomeLogo {

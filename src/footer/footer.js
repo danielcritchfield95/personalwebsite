@@ -6,15 +6,15 @@ import LinkedIn from '../images/LI-In-Bug.png';
 import './footer.css';
 import './mobileFooter.css';
 
-const Footer = () => {
+const Footer = (props) => {
     return (
-        <footer className='Footer'>
+        <footer className='Footer' id={props.id} >
             <div className='LogoLinks'>
                 <div className='LogoLink'>
-                    <a href='https://github.com/danielcritchfield95' target='_blank'><img src={GitHub} /></a>
+                    <a href='https://github.com/danielcritchfield95' target='_blank' rel="noopener noreferrer"><img src={GitHub} alt='Github logo and link to github page'/></a>
                 </div>
                 <div className='LogoLink'>
-                    <a href='https://www.linkedin.com/in/daniel-critchfield-83b17b127/' target='_blank'><img src={LinkedIn} /></a>
+                    <a href='https://www.linkedin.com/in/daniel-critchfield-83b17b127/' target='_blank' rel="noopener noreferrer"><img src={LinkedIn} alt='linkedin logo and link to linkedin page'/></a>
                 </div>
             </div>
             <div>

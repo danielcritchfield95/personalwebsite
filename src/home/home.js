@@ -139,7 +139,7 @@ class Home extends Component {
                 <Container>
                     <div id='Intro'>
                         <div className='Item'>
-                            <img src={Me} alt='Daniel Critchfield' />
+                            <img id='Me' src={Me} alt='Daniel Critchfield' />
                         </div>
                         <div className='Item'>
                             <div className='CenteredDescription'>

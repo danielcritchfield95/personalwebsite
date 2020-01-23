@@ -42,7 +42,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <Footer />
+            <Footer id='AboutFooter' />
         </Container>
     );
 }

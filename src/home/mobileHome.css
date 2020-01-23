@@ -12,13 +12,23 @@
         flex-direction: column;
     }
 
+    .Item {
+        display: flex;
+        justify-content: center;
+        height: 50%;
+    }
+
     .Item img {
-        width: 100%;
-        object-fit: cover;
+        width: 70%;
+        object-fit: contain;
     }
 
     .Container {
         overflow: auto;
+    }
+
+    #IntroDownArrow {
+        margin-top: 80px;
     }
 
 }
