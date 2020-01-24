@@ -10,7 +10,7 @@ import ProfessionalMe from '../images/ProfessionalMe.png';
 const About = () => {
 
     return (
-        <Container>
+        <div>
             <div className="About">
                 <div className='ProfessionalImage'>
                     <img src={ProfessionalMe} alt='Daniel Critchfield' />
@@ -43,7 +43,7 @@ const About = () => {
                 </div>
             </div>
             <Footer id='AboutFooter' />
-        </Container>
+        </div>
     );
 }
 

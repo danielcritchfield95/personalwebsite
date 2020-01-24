@@ -117,6 +117,11 @@ class Home extends Component {
         window.scrollTo(0, work.offsetTop - 90);
     }
 
+    scrollToFooter() {
+        const footer = document.querySelector('#MainFooter');
+        window.scrollTo(0, footer.offsetTop);
+    }
+
     render() {
         return (
             <div>
@@ -126,7 +131,7 @@ class Home extends Component {
                             <img src={Logo} alt="Medium Logo" />
                         </div>
                         <div id='HomeName'>
-                            <p>Daniel Critchfield</p>
+                            <p><span id='FName'>Daniel</span> <span id='LName'>Critchfield</span></p>
                         </div>
                         <div className='ChangingContent'>
                             {this.typeContent()}
@@ -161,9 +166,10 @@ class Home extends Component {
                 <Container>
                     <div id='Work'>
                         <h1>Work</h1>
+                        
                     </div>
                 </Container>
-                <Footer />
+                <Footer id='MainFooter'/>
             </div>
         );
     }

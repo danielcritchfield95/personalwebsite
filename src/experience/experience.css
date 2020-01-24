@@ -1,0 +1,28 @@
+.Experience {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+}
+
+#Column1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#Column2 {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin: 20px;
+}
+
+section p {
+    padding: 20px 0;
+}
+
+.Heading {
+    padding: 20px 0;
+    color: dodgerblue;
+}

@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+
+    .Experience {
+        flex-direction: column;
+    }
+    
+}
