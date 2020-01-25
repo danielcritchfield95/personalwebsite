@@ -1,0 +1,66 @@
+.Modal {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.ModalContainer {
+    width: 80%;
+    height: 50%;
+    background-color: red;
+    box-sizing: border-box;
+}
+
+.X {
+    position: relative;
+    float: right;
+    margin: 10px;
+    align-items: right;
+}
+
+.X:hover {
+    cursor: pointer;
+}
+
+.ModalHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    border-bottom: 2px solid black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ModalContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+.ModalFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.ModalFooter button {
+    width: 100px;
+    height: 25px;
+    border-radius: 1rem;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 1rem;
+}
+
+.ModalFooter button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.Tile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tile:hover {
+    top: -5px;
+    box-shadow: 5px 5px 5px 5px #888888;
+    cursor: pointer;
+}
