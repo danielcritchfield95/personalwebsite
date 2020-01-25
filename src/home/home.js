@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Container from '../container/container';
+import Carousel from '../carousel/carousel';
 import Footer from '../footer/footer';
 
 import './home.css';
 import './mobileHome.css';
 
 import Logo from '../images/DanClogoMedium.png';
-import Me from '../images/DanC.png';
+import Me from '../images/MeInIsraelDesert.png';
 import DownArrow from '../images/DownArrow.png';
 
 class Home extends Component {
@@ -165,8 +166,7 @@ class Home extends Component {
                 </Container>
                 <Container>
                     <div id='Work'>
-                        <h1>Work</h1>
-                        
+                        <Carousel />
                     </div>
                 </Container>
                 <Footer id='MainFooter'/>

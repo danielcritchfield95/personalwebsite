@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Container from '../container/container';
 
-const Projects = () => {
+class Projects extends Component {
 
-
-    return (
-        <Container>
-            <div className="Projects">
-                <h1>Projects</h1>
-            </div>
-        </Container>
-    );
+    render() {
+        return (
+            <Container>
+                <div className="Projects">
+                    <h1>Projects</h1>
+                </div>
+            </Container>
+        );
+    }
 }
 
 export default Projects;
