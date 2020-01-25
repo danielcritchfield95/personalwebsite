@@ -7,7 +7,7 @@
     }
 
     .AboutContent {
-        overflow: auto;
+        overflow: scroll;
     }
 
     .AboutContent p, h3 {
@@ -15,4 +15,8 @@
         margin: 10px;
     }
 
+    #AboutFooter {
+        position: relative !important;
+        bottom: 0;
+    }
 }

@@ -4,4 +4,7 @@
         flex-direction: column;
     }
     
+    #Column1 {
+        width: 100%;
+    }
 }

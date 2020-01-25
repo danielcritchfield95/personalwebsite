@@ -7,6 +7,11 @@
 #Column1 {
     display: flex;
     flex-direction: column;
+    width: 60%;
+}
+
+#Column1 h1 {
+    margin: 5px 10px;
 }
 
 #Column2 {
@@ -15,11 +20,11 @@
 }
 
 section {
-    margin: 20px;
+    margin: 10px;
 }
 
 section p {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .Heading {

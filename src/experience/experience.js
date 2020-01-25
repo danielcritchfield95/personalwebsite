@@ -28,7 +28,7 @@ const Experience = () => {
                             daniel.critchfield.primary@gmail.com<br />
                         </p>
                     </section>
-                    <section id='#ExperienceSection'>
+                    <section id='ExperienceSection'>
                         <h4 className='Heading'>Experience</h4>
                         <p>
                             <b>Dick’s Sporting Goods - ​Coraopolis, Pennsylvania</b> <br />
@@ -38,7 +38,7 @@ const Experience = () => {
                             I utilized paired programming, test driven development and continuous integration pipelines to quickly provide
                             production ready code on a daily basis. I worked on back end systems that were Spring Boot Java applications to
                             support various business functions. I then deployed these applications to the cloud using PCF as the platform.
-                    </p>
+                        </p>
                         <p>
                             <b>HM Health Solutions - ​Pittsburgh, Pennsylvania</b> <br />
                             <i>Application Developer</i> <br /><br />
@@ -49,7 +49,7 @@ const Experience = () => {
                             on the team were in Harrisburg while I worked in Pittsburgh. <br />
                         </p>
                     </section>
-                    <section id='#EducationSection'>
+                    <section id='EducationSection'>
                         <h4 className='Heading'>Education</h4>
                         <p>
                             <b>University of Pittsburgh ​— ​Computer Engineering BSE</b> <br />
@@ -62,7 +62,32 @@ const Experience = () => {
                 </div>
 
                 <div id='Column2'>
-                    <h1>Test</h1>
+                    <section id='LangFrameSection'>
+                        <h4 className='Heading'>Languages & Frameworks</h4>
+                        <p>Java</p>
+                        <p>JUnit</p>
+                        <p>Spring Boot</p>
+                        <p>C#</p>
+                        <p>Python</p>
+                        <p>SQL</p> 
+                        <p>Selenium</p> 
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                        <p>React</p>
+                    </section>
+                    <section id='TechAndMethodsSection'>
+                        <h4 className='Heading'>Technologies & Methodologies</h4>
+                        <p>Agile Scrum</p>
+                        <p>Lean Startup</p>
+                        <p>XPProgramming</p>
+                        <p>Git</p>
+                        <p>Github</p>
+                        <p>Concourse CI</p>
+                        <p>Redis</p>
+                        <p>RabbitMQ</p>
+                        <p>Pivotal Cloud Foundry (PCF)</p>
+                    </section>
                 </div>
             </div>
             <Footer id='ExperienceFooter' />
