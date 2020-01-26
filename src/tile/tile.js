@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './tile.css';
+import './mobileTile.css';
 
 const Tile = (props) => {
 

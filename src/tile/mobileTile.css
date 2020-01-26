@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+
+    .Tile {
+        width: 90%;
+        height: 100px;
+        border-radius: 0;
+    }
+
+}

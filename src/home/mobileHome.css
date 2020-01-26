@@ -31,4 +31,12 @@
         margin-top: 80px;
     }
 
+    .CenteredDescription {
+        width: 90%;
+    }
+
+    .CenteredDescription p {
+        margin: auto;
+    }
+
 }

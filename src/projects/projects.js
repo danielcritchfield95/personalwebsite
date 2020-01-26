@@ -21,13 +21,31 @@ class Projects extends Component {
                 title: <img src={Logo} alt='Logo' />,
                 header: 'Personal Website',
                 content: 'I wrote this website using React',
-                id: 0 // don't plan on removing any tiles so simple id is ok here
+                id: 0 
             },
             {
                 title: 'React Phone Controller',
-                header: 'header',
+                header: 'React Phone Controller',
                 content: 'content',
                 id: 1
+            },
+            {
+                title: 'EDD',
+                header: 'Estimated Delivery Date',
+                content: 'content',
+                id: 2
+            }, 
+            {
+                title: 'Sourcing Engine',
+                header: 'Sourcing Allocation Engine',
+                content: 'Sping Boot Java application to determine optimal sourcing locations for orders.',
+                id: 3
+            },
+            {
+                title: 'Automated Testing',
+                header: 'Automated Test Scripts',
+                content: 'Wrote automated test scripts using Java and Selenium to test a variety of different web applications.',
+                id: 4
             }
         ];
     }
@@ -38,7 +56,6 @@ class Projects extends Component {
             return (
                 <Tile
                     key={tile.id}
-                    id={tile.id}
                     title={tile.title}
                     header={tile.header}
                     content={tile.content}

@@ -126,7 +126,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Container backgroundColor={'#ccc'}>
+                <Container backgroundColor={'#ddd'}>
                     <div id='Home'>
                         <div id='HomeLogo'>
                             <img src={Logo} alt="Medium Logo" />
