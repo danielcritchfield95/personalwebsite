@@ -1,3 +1,12 @@
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 .Modal {
     position: absolute;
     display: none;
@@ -6,15 +15,16 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    animation: slideInFromLeft 0.5s 0s linear;
+    animation: slideInFromBottom 0.5s 0s linear;
 }
 
 .ModalContainer {
     width: 80%;
     height: 50%;
     box-sizing: border-box;
-    background-color: #eee;
+    background-color: dodgerblue;
     box-shadow: 10px 10px 10px 10px #888888;
+    color: white;
 }
 
 .X {
@@ -36,7 +46,7 @@
     width: 80%;
     margin: auto;
     padding-top: 5px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #aaa;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
 }
@@ -48,6 +58,7 @@
     height: 60%;
     width: 100%;
     padding: 15px;
+    font-size: 1.5rem;
 }
 
 .ModalFooter {

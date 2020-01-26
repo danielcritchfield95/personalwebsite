@@ -20,32 +20,20 @@ class Projects extends Component {
             {
                 title: <img src={Logo} alt='Logo' />,
                 header: 'Personal Website',
-                content: 'I wrote this website using React',
+                content: 'Used this website as an intro to working with React. I tried to implement most of the core functionality and animations from scratch instead of importing premade react components. All code for the site is on my github which is linked through the footer at bottom of the page',
                 id: 0 
             },
             {
                 title: 'React Phone Controller',
                 header: 'React Phone Controller',
-                content: 'content',
+                content: 'Project that allowed for developer to download the react components and create a web game controller. The controller had empty handler methods for joystick and gesture panels that the developer could fill in for desired functionality. The code is on my github under the controller repository. Link to my github is in the footer at the bottom of the page',
                 id: 1
-            },
-            {
-                title: 'EDD',
-                header: 'Estimated Delivery Date',
-                content: 'content',
-                id: 2
             }, 
             {
-                title: 'Sourcing Engine',
-                header: 'Sourcing Allocation Engine',
-                content: 'Sping Boot Java application to determine optimal sourcing locations for orders.',
+                title: 'CPR Glove',
+                header: 'Senior Design Project',
+                content: 'Worked with a team of three other engineers to design a glove that would aid in the administration of CPR. The glove used a combination of auditory and visual feedback to give realtime information to the user of how they were doing and how to correct wrong actions.',
                 id: 3
-            },
-            {
-                title: 'Automated Testing',
-                header: 'Automated Test Scripts',
-                content: 'Wrote automated test scripts using Java and Selenium to test a variety of different web applications.',
-                id: 4
             }
         ];
     }

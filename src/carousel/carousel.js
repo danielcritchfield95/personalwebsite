@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 
-import Desert from '../images/MeInIsraelDesert.png';
-import Batman from '../images/ImBatman.png';
-import Me from '../images/DanC.png';
-
 import './carousel.css';
 
 class Carousel extends Component {
@@ -11,7 +7,7 @@ class Carousel extends Component {
         super(props);
 
         this.state = {
-            images: [Desert, Batman, Me],
+            images: props.images,
             currentImageIndex: 0
         };
     }

@@ -9,11 +9,15 @@ import './mobileHome.css';
 import Logo from '../images/DanClogoMedium.png';
 import Me from '../images/MeInIsraelDesert.png';
 import DownArrow from '../images/DownArrow.png';
+import Batman from '../images/ImBatman.png';
+import Bike from '../images/DanC.png';
 
 class Home extends Component {
 
     constructor(props) {
         super(props);
+        
+        this.images = [Me, Batman, Bike];
 
         this.words = [
             'Software Engineer...'.split(''),
@@ -166,7 +170,7 @@ class Home extends Component {
                 </Container>
                 <Container>
                     <div id='Work'>
-                        <Carousel />
+                        <Carousel images={this.images} />
                     </div>
                 </Container>
                 <Footer id='MainFooter'/>

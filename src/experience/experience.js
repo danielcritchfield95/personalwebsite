@@ -1,6 +1,8 @@
 import React from 'react';
 import Footer from '../footer/footer';
 
+import resume from '../pdfs/Resume.pdf';
+
 import './experience.css';
 import './mobileExperience.css';
 
@@ -55,8 +57,8 @@ const Experience = () => {
                             <b>University of Pittsburgh ​— ​Computer Engineering BSE</b> <br />
                             <i>2013 - 2017</i> <br /><br />
                             Focused on software engineering while also developing a deep understanding of computer architecture. <br />
-                            I utilized my time at Pitt by assisting in research, pursing my interest in software outside of class through <br />
-                            personal projects with friends and competing in a hackathon. <br />
+                            I utilized my time at Pitt by assisting in research, interning and pursing my interest in software outside of the classroom through
+                            personal projects with friends. <br />
                         </p>
                     </section>
                 </div>
@@ -88,6 +90,7 @@ const Experience = () => {
                         <p>RabbitMQ</p>
                         <p>Pivotal Cloud Foundry (PCF)</p>
                     </section>
+                    <a href={resume} download><button className='Download'>Download Resume</button></a>
                 </div>
             </div>
             <Footer id='ExperienceFooter' />
