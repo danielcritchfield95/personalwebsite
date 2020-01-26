@@ -3,10 +3,11 @@
     width: 200px;
     height: 200px;
     margin: 30px;
-    background-color: #eee;
+    background-color: dodgerblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 100px;
 }
 
 .Tile:hover {

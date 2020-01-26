@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+
+    #Projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

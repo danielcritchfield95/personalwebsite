@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from '../container/container';
 import Footer from '../footer/footer';
 
 import './about.css';

@@ -6,13 +6,15 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    animation: slideInFromLeft 0.5s 0s linear;
 }
 
 .ModalContainer {
     width: 80%;
     height: 50%;
-    background-color: red;
     box-sizing: border-box;
+    background-color: #eee;
+    box-shadow: 10px 10px 10px 10px #888888;
 }
 
 .X {
@@ -31,9 +33,12 @@
     justify-content: center;
     align-items: center;
     height: 15%;
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    padding-top: 5px;
     border-bottom: 2px solid black;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
 }
 
 .ModalContent {

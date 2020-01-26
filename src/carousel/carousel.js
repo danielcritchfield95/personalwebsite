@@ -43,7 +43,7 @@ class Carousel extends Component {
                     <div className='Arrow Left' onClick={this.handleLeftArrowClick}></div>
                 </div>
                 <div className='CarouselContent'>
-                    <img src={this.state.images[this.state.currentImageIndex]} />
+                    <img src={this.state.images[this.state.currentImageIndex]} alt='Carousel Item' />
                 </div>
                 <div className='RightArrow'>
                     <div className='Arrow Right' onClick={this.handleRightArrowClick}></div>
