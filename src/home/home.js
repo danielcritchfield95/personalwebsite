@@ -23,7 +23,7 @@ class Home extends Component {
 
     constructor(props) {
         super(props);
-        
+
         this.images = [Me, Batman, Bike];
 
         this.words = [
@@ -180,10 +180,7 @@ class Home extends Component {
                         <Carousel images={this.images} />
                     </div>
                 </Container>
-                <Footer id='MainFooter'/>
-                <Switch>
-                    <Route path='/about' component={About} />
-                </Switch>
+                <Footer id='MainFooter' />
             </div>
         );
     }

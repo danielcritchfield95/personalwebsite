@@ -42,7 +42,7 @@
     margin: auto;
     animation-duration: 1s; 
     animation-timing-function: ease-out; 
-    animation-delay: 1s; 
+    animation-delay: 0s; 
     animation-iteration-count: 1; 
     animation-name: slideInFromTop;
 }
@@ -58,7 +58,7 @@
     display: inline-block; /* Needed for animation to work */
     animation-duration: 1s; 
     animation-timing-function: ease-out; 
-    animation-delay: 1s; 
+    animation-delay: 0s; 
     animation-iteration-count: 1; 
     animation-name: slideInFromLeft;
 }
@@ -67,7 +67,7 @@
     display: inline-block; /* Needed for animation to work */
     animation-duration: 1s; 
     animation-timing-function: ease-out; 
-    animation-delay: 1s; 
+    animation-delay: 0s; 
     animation-iteration-count: 1; 
     animation-name: slideInFromRight;
 }
