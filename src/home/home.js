@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import Container from '../container/container';
 import Carousel from '../carousel/carousel';
 import Footer from '../footer/footer';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    NavLink
+} from 'react-router-dom';
+import About from '../about/about';
 
 import './home.css';
 import './mobileHome.css';
@@ -160,7 +167,7 @@ class Home extends Component {
                                     I enjoy being a full stack developer, and I am always
                                     looking to learn and work with new technologies.
                                 </p>
-                                <button><i><a href='/about'>Read More</a></i></button>
+                                <button><i><NavLink to='/about' activeClassName='ActiveLink' >Read More</NavLink></i></button>
                             </div>
                         </div>
                     </div>
@@ -174,6 +181,9 @@ class Home extends Component {
                     </div>
                 </Container>
                 <Footer id='MainFooter'/>
+                <Switch>
+                    <Route path='/about' component={About} />
+                </Switch>
             </div>
         );
     }
