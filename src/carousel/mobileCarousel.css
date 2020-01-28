@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+
+    .LeftArrow {
+        width: 10%;
+    }
+    
+    .RightArrow {
+        width: 10%;
+    }
+
+}

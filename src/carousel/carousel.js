@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './carousel.css';
+import './mobileCarousel.css';
 
 class Carousel extends Component {
     constructor(props) {
