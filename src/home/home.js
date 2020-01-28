@@ -11,6 +11,7 @@ import Me from '../images/MeInIsraelDesert.png';
 import DownArrow from '../images/DownArrow.png';
 import Batman from '../images/ImBatman.png';
 import Bike from '../images/DanC.png';
+import Code from '../images/WebCode.png';
 
 class Home extends Component {
 
@@ -130,7 +131,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Container backgroundColor={'#ddd'}>
+                <Container backgroundImage={Code}>
                     <div id='Home'>
                         <div id='HomeLogo'>
                             <img src={Logo} alt="Medium Logo" />
@@ -160,7 +161,6 @@ class Home extends Component {
                                     I enjoy being a full stack developer, and I am always
                                     looking to learn and work with new technologies.
                                 </p>
-                                <button><i><a href='about'>Read More</a></i></button>
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@ class Home extends Component {
                         <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToWork} />
                     </div>
                 </Container>
-                <Container>
+                <Container backgroundColor={'#ddd'} >
                     <div id='Work'>
                         <Carousel images={this.images} />
                     </div>

@@ -5,7 +5,9 @@ import './container.css';
 const Container = (props) => {
 
     const style = {
-        backgroundColor: props.backgroundColor
+        backgroundColor: props.backgroundColor,
+        backgroundImage: `url(${props.backgroundImage})`,
+        backgroundSize: 'cover'
     };
 
     return(
