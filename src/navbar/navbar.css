@@ -8,10 +8,11 @@
 
 #navbar {
     position: fixed;
+    padding-top: 5px;
     top: 0;
     z-index: 2;
     width: 100%;
-    background-color: rgba(0, 0, 0, 1);
+    /* background-color: rgba(0, 0, 0, 1); */
 }
 
 #navItems {
@@ -24,7 +25,8 @@
 #navItems li a {
     margin: 2rem;
     text-decoration: none;
-    color: white;
+    color: #888888;
+    text-shadow: 1px 1px 1px black;
 }
 
 #navItems li a:hover {
@@ -32,8 +34,11 @@
 }
 
 .Logo {
+    padding: 1px;
     display: block;
     margin: auto;
+    background-color: #888888;
+    border-radius: 100%;
 }
 
 .Logo:hover {

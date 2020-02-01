@@ -23,8 +23,7 @@ class Navbar extends Component {
         this.navRef = React.createRef();
 
         this.state = {
-            dropDownActive: false,
-            atTop: true
+            dropDownActive: false
         };
     }
 
@@ -54,22 +53,6 @@ class Navbar extends Component {
 
     componentDidMount() {
         window.addEventListener("resize", this.updateNavItems);
-        window.addEventListener("scroll", this.onScroll);
-
-        if (this.state.atTop) {
-            this.navRef.current.style.backgroundColor='transparent';
-        } else {
-            this.navRef.current.style.backgroundColor='black';
-        }
-    }
-
-    onScroll = () => {
-        //console.log(window.scrollY);
-        if (window.scrollY < 10) {
-            this.setState({atTop: true});
-        } else {
-            this.setState({atTop: false});
-        }
     }
 
     notFound() {
