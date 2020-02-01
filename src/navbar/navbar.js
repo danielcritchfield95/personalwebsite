@@ -83,8 +83,8 @@ class Navbar extends Component {
                     </div>
                 </nav>
                 <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route path='/about' component={About} />
+                    <Route exact path='/' component={About} />
+                    <Route path='/about' component={Home} />
                     <Route path='/experience' component={Experience} />
                     <Route path='/projects' component={Projects} />
                     <Route component={this.notFound} />
