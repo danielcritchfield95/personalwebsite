@@ -70,11 +70,11 @@
     background-color: transparent;
     display: flex;
     justify-content: center;
-    animation-duration: 1s; 
+    /* animation-duration: 1s; 
     animation-timing-function: ease-out; 
     animation-delay: 0s; 
     animation-iteration-count: 1; 
-    animation-name: slideInFromTop;
+    animation-name: slideInFromTop; */
 }
 
 #HomeName {
@@ -87,20 +87,20 @@
 
 #FName {
     display: inline-block; /* Needed for animation to work */
-    animation-duration: 1s; 
+    /* animation-duration: 1s; 
     animation-timing-function: ease-out; 
     animation-delay: 0s; 
     animation-iteration-count: 1; 
-    animation-name: slideInFromLeft;
+    animation-name: slideInFromLeft; */
 }
 
 #LName {
     display: inline-block; /* Needed for animation to work */
     animation-duration: 1s; 
-    animation-timing-function: ease-out; 
+    /* animation-timing-function: ease-out; 
     animation-delay: 0s; 
     animation-iteration-count: 1; 
-    animation-name: slideInFromRight;
+    animation-name: slideInFromRight; */
 }
 
 .ChangingContent {
