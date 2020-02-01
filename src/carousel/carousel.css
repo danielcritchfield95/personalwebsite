@@ -1,22 +1,22 @@
 @keyframes hover {
     0% { 
         top: 0px; 
-        box-shadow: 0px 0px 0px 0px #888888;
+        box-shadow: 0px 0px 0px 0px rgb(105,105,105);
     }
     100% {
         top: -15px;
-        box-shadow: 5px 10px 8px 10px #888888;
+        box-shadow: 5px 10px 18px 10px rgb(105,105,105);
     }
 }
 
 @keyframes embed {
     0% {
         top: -15px;
-        box-shadow: 5px 10px 8px 10px #888888;
+        box-shadow: 5px 10px 18px 10px rgb(105,105,105);
     }
     100% { 
         top: 0px; 
-        box-shadow: 0px 0px 0px 0px #888888;
+        box-shadow: 0px 0px 0px 0px rgb(105,105,105);
     }
 }
 
@@ -24,15 +24,17 @@
     background-color: white;
     display: flex;
     flex-direction: row;
-    width: 90%;
-    height: 80%;
+    width: 70vw;
+    height: 80vh;
     margin: auto;
     position: relative;
-    box-shadow: 0px 0px 0px 0px #888888;
+    box-shadow: 0px 0px 0px 0px rgb(105,105,105);
     animation: embed;
     animation-duration: 1s;
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .Carousel:hover {
@@ -40,7 +42,7 @@
     animation-duration: 1s;
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
-    box-shadow: 5px 10px 8px 10px #888888;
+    box-shadow: 5px 10px 18px 10px rgb(105,105,105);
     top: -15px;
 }
 
@@ -85,14 +87,12 @@
 .CarouselContent {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 50%;
     width: 90%;
     justify-content: center;
     align-items: center;
 }
 
 .CarouselContent img {
-    width: 100%;
     height: 100%;
-    object-fit: contain;
 }

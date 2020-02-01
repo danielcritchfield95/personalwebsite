@@ -20,8 +20,10 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
 
+        this.navRef = React.createRef();
+
         this.state = {
-            dropDownActive: false,
+            dropDownActive: false
         };
     }
 
@@ -63,15 +65,11 @@ class Navbar extends Component {
         window.scrollTo(0, 0);
     }
 
-    shouldComponentUpdate() {
-        return false;
-    }
-
     render() {
         return (
             <Router>
-                <nav id='navbar'>
-                    <img className="Logo" src={logo} alt='My Logo' onClick={this.handleLogoClick}/>
+                <nav id='navbar' ref={this.navRef}>
+                    <NavLink exact={true} to='/'><img className="Logo" src={logo} alt='My Logo' onClick={this.handleLogoClick}/></NavLink>
                     <ul id='navItems'>
                         <li><NavLink exact={true} to='/' activeClassName='ActiveLink' >Home</NavLink></li>
                         <li><NavLink to='/about' activeClassName='ActiveLink' >About</NavLink></li>

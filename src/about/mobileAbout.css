@@ -6,8 +6,20 @@
         top: 5px;
     }
 
-    .AboutContent {
-        overflow: scroll;
+    .About .Title {
+        padding-bottom: 20px;
+    }
+
+    .AboutContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ProfessionalImage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
     }
 
     .AboutContent p, h3 {
