@@ -144,7 +144,7 @@ class Home extends Component {
                             <p><span id='FName'>Daniel</span> <span id='LName'>Critchfield</span></p>
                         </div>
                         <div className='ChangingContent'>
-                            {this.typeContent()}
+                            {/* {this.typeContent()} */}
                         </div>
                     </div>
                 </div>
