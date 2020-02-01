@@ -34,7 +34,7 @@ class Home extends Component {
         ];
 
         this.state = {
-            renderText: false,
+            renderText: true,
             deleteText: false,
             i: 0,
             j: 0,
@@ -53,34 +53,35 @@ class Home extends Component {
         let i = this.state.i;
         let j = this.state.j;
 
-        if (renderText) {
-            if (!deleteText) {
-                paragraph.push(words[j][i % words[j].length]);
-            } else {
-                paragraph.pop();
-            }
-
-            text = paragraph.join("") + '|';
-
-            i++;
-
-            if (deleteText && paragraph.length === 0) {
-                j++;
-                if (j % words.length === 0) {
-                    j = 0;
-                }
-                i = 0;
-            }
-
-            if (i % words[j].length === 0) {
-                deleteText = !deleteText;
-            }
-
-        } else {
-            text = paragraph.join("");
-        }
-
         this.typing = setTimeout(() => {
+
+            if (renderText) {
+                if (!deleteText) {
+                    paragraph.push(words[j][i % words[j].length]);
+                } else {
+                    paragraph.pop();
+                }
+
+                text = paragraph.join("") + '|';
+
+                i++;
+
+                if (deleteText && paragraph.length === 0) {
+                    j++;
+                    if (j % words.length === 0) {
+                        j = 0;
+                    }
+                    i = 0;
+                }
+
+                if (i % words[j].length === 0) {
+                    deleteText = !deleteText;
+                }
+
+            } else {
+                text = paragraph.join("");
+            }
+
             this.setState({
                 renderText: renderText,
                 deleteText: deleteText,
@@ -92,9 +93,10 @@ class Home extends Component {
             if (changingContent !== null && changingContent !== undefined) {
                 changingContent.innerHTML = text;
             }
+
+            renderText = !renderText;
         }, 100);
 
-        renderText = !renderText;
     }
 
     componentWillUnmount() {

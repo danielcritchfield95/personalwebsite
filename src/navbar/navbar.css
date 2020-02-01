@@ -49,7 +49,6 @@
 }
 
 .ActiveLink {
-    pointer-events: none;
     color: dodgerblue !important;
     font-weight: bold !important;
     cursor: pointer;

@@ -20,8 +20,11 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
 
+        this.navRef = React.createRef();
+
         this.state = {
             dropDownActive: false,
+            atTop: true
         };
     }
 
@@ -51,6 +54,22 @@ class Navbar extends Component {
 
     componentDidMount() {
         window.addEventListener("resize", this.updateNavItems);
+        window.addEventListener("scroll", this.onScroll);
+
+        if (this.state.atTop) {
+            this.navRef.current.style.backgroundColor='transparent';
+        } else {
+            this.navRef.current.style.backgroundColor='black';
+        }
+    }
+
+    onScroll = () => {
+        //console.log(window.scrollY);
+        if (window.scrollY < 10) {
+            this.setState({atTop: true});
+        } else {
+            this.setState({atTop: false});
+        }
     }
 
     notFound() {
@@ -66,8 +85,8 @@ class Navbar extends Component {
     render() {
         return (
             <Router>
-                <nav id='navbar'>
-                    <img className="Logo" src={logo} alt='My Logo' onClick={this.handleLogoClick}/>
+                <nav id='navbar' ref={this.navRef}>
+                    <NavLink exact={true} to='/'><img className="Logo" src={logo} alt='My Logo' onClick={this.handleLogoClick}/></NavLink>
                     <ul id='navItems'>
                         <li><NavLink exact={true} to='/' activeClassName='ActiveLink' >Home</NavLink></li>
                         <li><NavLink to='/about' activeClassName='ActiveLink' >About</NavLink></li>
