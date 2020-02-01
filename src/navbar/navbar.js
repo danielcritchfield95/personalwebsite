@@ -63,10 +63,6 @@ class Navbar extends Component {
         window.scrollTo(0, 0);
     }
 
-    shouldComponentUpdate() {
-        return false;
-    }
-
     render() {
         return (
             <Router>

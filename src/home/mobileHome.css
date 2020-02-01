@@ -80,10 +80,7 @@
     .Item img {
         width: 70%;
         object-fit: contain;
-    }
-
-    .Container {
-        overflow: auto;
+        border-radius: 0;
     }
 
     #IntroDownArrow {

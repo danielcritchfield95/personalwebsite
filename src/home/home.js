@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Container from '../container/container';
 import Carousel from '../carousel/carousel';
 import Footer from '../footer/footer';
 
@@ -11,7 +10,6 @@ import Me from '../images/MeInIsraelDesert.png';
 import DownArrow from '../images/DownArrow.png';
 import Batman from '../images/ImBatman.png';
 import Bike from '../images/DanC.png';
-import Code from '../images/WebCode.png';
 
 class Home extends Component {
 
@@ -45,6 +43,8 @@ class Home extends Component {
     }
 
     typeContent = () => {
+        window.clearTimeout(this.typing);
+
         const words = this.words;
         let text = '';
         let renderText = this.state.renderText;
@@ -123,16 +123,13 @@ class Home extends Component {
         window.scrollTo(0, work.offsetTop - 90);
     }
 
-    scrollToFooter() {
-        const footer = document.querySelector('#MainFooter');
-        window.scrollTo(0, footer.offsetTop);
-    }
 
     render() {
         return (
             <div>
-                <Container backgroundImage={Code}>
-                    <div id='Home'>
+                <div id='Home'>
+                    <div className='Container'>
+                        <div className='blur'></div>
                         <div id='HomeLogo'>
                             <img src={Logo} alt="Medium Logo" />
                         </div>
@@ -143,36 +140,40 @@ class Home extends Component {
                             {this.typeContent()}
                         </div>
                     </div>
-                    <div className='DownArrow' id='HomeDownArrow'>
-                        <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToIntro} />
+                </div>
+                <div id='padding'></div>
+                <div className='DownArrow' id='HomeDownArrow'>
+                    <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToIntro} />
+                </div>
+                <div id='Intro'>
+                    <div className='Item'>
+                        <img id='Me' src={Me} alt='Daniel Critchfield' />
                     </div>
-                </Container>
-                <Container>
-                    <div id='Intro'>
-                        <div className='Item'>
-                            <img id='Me' src={Me} alt='Daniel Critchfield' />
-                        </div>
-                        <div className='Item'>
-                            <div className='CenteredDescription'>
-                                <p>Intro</p>
-                                <p>
-                                    I’m a computer engineering graduate from the University
-                                    of a Pittsburgh with a focus on software engineering.
-                                    I enjoy being a full stack developer, and I am always
-                                    looking to learn and work with new technologies.
+                    <div className='Item'>
+                        <div className='CenteredDescription'>
+                            <p>Intro</p>
+                            <p>
+                                I’m a computer engineering graduate from the University
+                                of a Pittsburgh with a focus on software engineering.
+                                I enjoy being a full stack developer, and I am always
+                                looking to learn and work with new technologies.
                                 </p>
-                            </div>
                         </div>
                     </div>
-                    <div className='DownArrow' id='IntroDownArrow'>
-                        <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToWork} />
-                    </div>
-                </Container>
-                <Container backgroundColor={'#ddd'} >
-                    <div id='Work'>
+                </div>
+                <div className='DownArrow' id='IntroDownArrow'>
+                    <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToWork} />
+                </div>
+                <div id='Work'>
+                    <div className='CarouselContainer'>
                         <Carousel images={this.images} />
                     </div>
-                </Container>
+                </div>
+                <div id='Outro'>
+                    <div className='Container'>
+                        <h2>Outro</h2>
+                    </div>
+                </div>
                 <Footer id='MainFooter' />
             </div>
         );

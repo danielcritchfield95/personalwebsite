@@ -1,23 +1,56 @@
 #Home {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding-top: 200px;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    transform: skewY(-5deg);
+    opacity: 100%;
+    z-index: 1;
+    background-color: black;
+    position: fixed;
+    z-index: -5;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: skewY(5deg);
+}
+
+.blur {
+    position: absolute;
+    background-color: dodgerblue;
+    box-shadow: 0 0 50px 100px dodgerblue;
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    filter: blur(50px);
+    opacity: 80%;
+    z-index: -5;
 }
 
 #HomeLogo {
-    margin: auto;
+    z-index: 1;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
 }
 
 #HomeName {
-    margin: auto;
+    color: white;
+    z-index: 1;
     font-size: 3.5rem;
     font-family: "Courier New", Courier, monospace;
-    color: dodgerblue;
     text-shadow: 1px 1px 2px #888888;
 }
 
 .ChangingContent {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
     font-family: "Courier New", Courier, monospace;
     font-size: 2rem;
     margin: auto;
@@ -42,19 +75,34 @@
     bottom: 0;
 }
 
+#padding {
+    height: 100vh;
+    position: relative;
+}
+
 #Intro {
-    display: grid;
-    grid-template-columns: auto auto; 
+    position: relative;
+    /* z-index: 2; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: white;
+    transform: skewY(-5deg);
 }
 
 .Item {
-    width: 100%;
-    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform: skewY(5deg);
 }
 
 .Item img {
-    height: 100%;
     object-fit: contain;
+    border-radius: 100%;
 }
 
 .CenteredDescription {
@@ -91,8 +139,34 @@
 }
 
 #Work {
-    width: 100%;
+    position: relative;
     height: 100%;
+    background-color: #888888;
     display: flex;
+    align-items: center;
+    transform: skewY(5deg);
+    z-index: 1;
+}
+
+.CarouselContainer {
+    width: 100%;
+}
+
+#Work .CarouselContainer {
+    transform: skewY(-5deg);
+}
+
+#Outro {
+    position: relative;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: dodgerblue;
+    transform: skewY(-5deg);
+}
+
+#Outro .Container {
+    width: 100%;
+    justify-content: center;
     align-items: center;
 }

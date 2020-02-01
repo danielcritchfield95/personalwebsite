@@ -35,6 +35,7 @@ class Projects extends Component {
                 content: 'Worked with a team of three other engineers to design a glove that would aid in the administration of CPR. The glove used a combination of auditory and visual feedback to give realtime information to the user of how they were doing and how to correct wrong actions.',
                 id: 3
             }
+            
         ];
     }
 
@@ -54,11 +55,11 @@ class Projects extends Component {
     }
 
     blurSelf() {
-        this.projectsRef.current.classList.add('blur');
+        this.projectsRef.current.classList.add('blur-modal');
     }
 
     unblurSelf() {
-        this.projectsRef.current.classList.remove('blur');
+        this.projectsRef.current.classList.remove('blur-modal');
     }
 
     render() {

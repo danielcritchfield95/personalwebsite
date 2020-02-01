@@ -1,11 +1,12 @@
 #Projects {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     height: 100vh;
 }
 
-.blur {
+.blur-modal {
     filter: blur(4px);
 }
