@@ -1,22 +1,22 @@
 @keyframes hover {
     0% { 
         top: 0px; 
-        box-shadow: 0px 0px 0px 0px #aaa;
+        box-shadow: 0px 0px 0px 0px rgb(105,105,105);
     }
     100% {
         top: -15px;
-        box-shadow: 5px 10px 18px 10px #aaa;
+        box-shadow: 5px 10px 18px 10px rgb(105,105,105);
     }
 }
 
 @keyframes embed {
     0% {
         top: -15px;
-        box-shadow: 5px 10px 18px 10px #aaa;
+        box-shadow: 5px 10px 18px 10px rgb(105,105,105);
     }
     100% { 
         top: 0px; 
-        box-shadow: 0px 0px 0px 0px #aaa;
+        box-shadow: 0px 0px 0px 0px rgb(105,105,105);
     }
 }
 
@@ -28,7 +28,7 @@
     height: 80vh;
     margin: auto;
     position: relative;
-    box-shadow: 0px 0px 0px 0px #aaa;
+    box-shadow: 0px 0px 0px 0px rgb(105,105,105);
     animation: embed;
     animation-duration: 1s;
     animation-delay: 0s;
@@ -42,7 +42,7 @@
     animation-duration: 1s;
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
-    box-shadow: 5px 10px 18px 10px #aaa;
+    box-shadow: 5px 10px 18px 10px rgb(105,105,105);
     top: -15px;
 }
 

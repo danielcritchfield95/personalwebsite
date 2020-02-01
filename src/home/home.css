@@ -159,6 +159,8 @@
 .Item img {
     object-fit: contain;
     border-radius: 100%;
+    /* transform: skewY(-5deg); */
+    margin-left: 100px;
 }
 
 .CenteredDescription {
@@ -225,4 +227,8 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+#OutroDownArrow {
+    position: relative;
 }

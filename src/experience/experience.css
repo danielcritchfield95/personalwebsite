@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
     font-size: 1.25rem;
+    padding-top: 100px;
 }
 
 #Column1 {
@@ -13,6 +14,7 @@
 
 #Column1 h1 {
     margin: 5px 10px;
+    padding-left: 100px;
 }
 
 #Column2 {
@@ -25,11 +27,11 @@ section {
 }
 
 section p {
-    padding: 10px 0;
+    padding: 10px 100px;
 }
 
 .Heading {
-    padding: 20px 0;
+    padding: 20px 100px;
     color: dodgerblue;
 }
 
@@ -41,5 +43,5 @@ section p {
     font-size: 1.25rem;
     cursor: pointer;
     border-radius: 0.5rem;
-    margin: 5px 5px;
+    margin-left: 100px;
 }

@@ -22,6 +22,7 @@
         width: 70%;
         object-fit: contain;
         border-radius: 0;
+        margin-left: 0;
     }
 
     #IntroDownArrow {

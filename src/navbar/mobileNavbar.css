@@ -1,5 +1,9 @@
 @media (max-width: 768px) {
 
+    #navbar {
+        /* background-color: #888888; */
+    }
+
     a:hover {
         color: black !important;
     }
@@ -16,8 +20,12 @@
         transition: background 500ms ease-in-out;
     }
 
+    #navItems li a {
+        color: white;
+    }
+
     #navItems li:hover {
-        background-color: aqua;
+        background-color: #888888;
     }
 
     .Logo {
@@ -42,6 +50,7 @@
         height: 4px;
         margin: 2px;
         background-color: white;
+        box-shadow: 1px 1px 1px 1px #888888;
     }
 
 }

@@ -125,6 +125,11 @@ class Home extends Component {
         window.scrollTo(0, work.offsetTop - 90);
     }
 
+    scrollToOutro() {
+        const outro = document.querySelector('#Outro');
+        window.scrollTo(0, outro.offsetTop - 90);
+    }
+
 
     render() {
         return (
@@ -169,6 +174,9 @@ class Home extends Component {
                 <div id='Work'>
                     <div className='CarouselContainer'>
                         <Carousel images={this.images} />
+                        <div className='DownArrow' id='OutroDownArrow'>
+                            <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToOutro} />
+                        </div>
                     </div>
                 </div>
                 <div id='Outro'>
