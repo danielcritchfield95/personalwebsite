@@ -6,4 +6,9 @@
         border-radius: 0;
     }
 
+    .TileContent {
+        padding-top: 100px;
+        overflow: scroll;
+    }
+
 }

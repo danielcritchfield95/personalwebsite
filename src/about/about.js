@@ -25,17 +25,17 @@ const About = () => {
                                 I am a Software Engineer.
                                 I enjoy studying new technologies, and figuring out
                                 creative ways to solve different problems.
-                        </p>
+                            </p>
                             <p>
                                 I am a graduate of the University of Pittsburgh's computer engineering
                                  program and primarily focused on software engineering during my time there.
                                  What fascinates me about the field is the vast number of programming languages
                                  and technologies I get to learn as I progress through my career.
-                        </p>
+                            </p>
                             <p>
                                 I have yet to find an area of programming that I haven't been interested in. That being
                                 said, I am most experienced in full stack development (mostly back end dev up to this point).
-                        </p>
+                            </p>
                             <br />
                         </div>
                     </div>

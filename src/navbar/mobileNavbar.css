@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
 
     #navbar {
-        /* background-color: #888888; */
+        background-color: black;
     }
 
     a:hover {
