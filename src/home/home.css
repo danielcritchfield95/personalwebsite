@@ -5,7 +5,7 @@
     }
     100% {
         transform: translateY(0);
-        opacity: 100%;
+        opacity: 1;
      }
 }
 
@@ -16,7 +16,7 @@
     }
     100% {
         transform: translateX(0);
-        opacity: 100%;
+        opacity: 1;
      }
 }
 
@@ -27,7 +27,7 @@
     }
     100% {
         transform: translateX(0);
-        opacity: 100%;
+        opacity: 1;
      }
 }
 
@@ -39,7 +39,7 @@
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     transform: skewY(-5deg);
-    opacity: 100%;
+    opacity: 1;
     z-index: 1;
     background-color: black;
     position: fixed;
@@ -61,7 +61,7 @@
     height: 100%;
     width: 100%;
     filter: blur(50px);
-    opacity: 80%;
+    opacity: 0.8;
     z-index: -5;
 }
 
@@ -70,11 +70,11 @@
     background-color: transparent;
     display: flex;
     justify-content: center;
-    /* animation-duration: 1s; 
+    animation-duration: 1s; 
     animation-timing-function: ease-out; 
     animation-delay: 0s; 
     animation-iteration-count: 1; 
-    animation-name: slideInFromTop; */
+    animation-name: slideInFromTop;
 }
 
 #HomeName {
@@ -87,20 +87,20 @@
 
 #FName {
     display: inline-block; /* Needed for animation to work */
-    /* animation-duration: 1s; 
+    animation-duration: 1s; 
     animation-timing-function: ease-out; 
     animation-delay: 0s; 
     animation-iteration-count: 1; 
-    animation-name: slideInFromLeft; */
+    animation-name: slideInFromLeft;
 }
 
 #LName {
     display: inline-block; /* Needed for animation to work */
     animation-duration: 1s; 
-    /* animation-timing-function: ease-out; 
+    animation-timing-function: ease-out; 
     animation-delay: 0s; 
     animation-iteration-count: 1; 
-    animation-name: slideInFromRight; */
+    animation-name: slideInFromRight;
 }
 
 .ChangingContent {
