@@ -9,6 +9,7 @@
 
 .About .Container {
     background-color: dodgerblue;
+    transform: skewY(-5deg);
 }
 
 .Title {
@@ -18,13 +19,13 @@
     align-items: center;
     justify-content: center;
     padding-top: 150px;
-    transform: skewY(-5deg);
+    transform: skewY(5deg);
 }
 
 .AboutContainer {
     display: flex;
     flex-direction: row;
-    transform: skewY(-5deg);
+    transform: skewY(5deg);
 }
 
 .ProfessionalImage {

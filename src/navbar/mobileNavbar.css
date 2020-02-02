@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
 
     #navbar {
-        background-color: black;
+        background-color: white;
     }
 
     a:hover {
@@ -21,11 +21,11 @@
     }
 
     #navItems li a {
-        color: white;
+        color: black;
     }
 
     #navItems li:hover {
-        background-color: #888888;
+        background-color: dodgerblue;
     }
 
     .Logo {

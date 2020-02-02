@@ -7,16 +7,15 @@ import './mobileHome.css';
 
 import Logo from '../images/DanClogoMedium.png';
 import Me from '../images/MeInIsraelDesert.png';
-import DownArrow from '../images/DownArrow.png';
-import Batman from '../images/ImBatman.png';
-import Bike from '../images/DanC.png';
+import Controller from '../images/controller.png';
+import ControllerConsole from '../images/controllerConsole.png';
 
 class Home extends Component {
 
     constructor(props) {
         super(props);
 
-        this.images = [Me, Batman, Bike];
+        this.images = [Controller, ControllerConsole];
 
         this.words = [
             'Software Engineer...'.split(''),
@@ -149,39 +148,32 @@ class Home extends Component {
                     </div>
                 </div>
                 <div id='padding'></div>
-                <div className='DownArrow' id='HomeDownArrow'>
-                    <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToIntro} />
-                </div>
-                <div id='Intro'>
-                    <div className='Item'>
-                        <img id='Me' src={Me} alt='Daniel Critchfield' />
-                    </div>
-                    <div className='Item'>
-                        <div className='CenteredDescription'>
-                            <p>Intro</p>
-                            <p>
-                                I’m a computer engineering graduate from the University
-                                of a Pittsburgh with a focus on software engineering.
-                                I enjoy being a full stack developer, and I am always
-                                looking to learn and work with new technologies.
+                <div className='Background'>
+                    <div id='Intro'>
+                        <div className='Item'>
+                            <img id='Me' src={Me} alt='Daniel Critchfield' />
+                        </div>
+                        <div className='Item'>
+                            <div className='CenteredDescription'>
+                                <p>Intro</p>
+                                <p>
+                                    I’m a computer engineering graduate from the University
+                                    of a Pittsburgh with a focus on software engineering.
+                                    I enjoy being a full stack developer, and I am always
+                                    looking to learn and work with new technologies.
                                 </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='DownArrow' id='IntroDownArrow'>
-                    <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToWork} />
-                </div>
-                <div id='Work'>
-                    <div className='CarouselContainer'>
-                        <Carousel images={this.images} />
-                        <div className='DownArrow' id='OutroDownArrow'>
-                            <img src={DownArrow} alt='Down Arrow' onClick={this.scrollToOutro} />
+                    <div id='Work'>
+                        <div className='CarouselContainer'>
+                            <Carousel images={this.images} />
                         </div>
                     </div>
-                </div>
-                <div id='Outro'>
-                    <div className='Container'>
-                        <h2>Outro</h2>
+                    <div id='Outro'>
+                        <div className='Container'>
+                            <h2>I am constantly looking for new and exciting projects to work on</h2>
+                        </div>
                     </div>
                 </div>
                 <Footer id='MainFooter' />

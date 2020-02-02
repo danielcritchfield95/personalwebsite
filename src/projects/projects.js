@@ -65,7 +65,6 @@ class Projects extends Component {
     render() {
         return (
             <div>
-                <Modal ref={this.modalRef} parent={this} />
                 <div id='Projects' ref={this.projectsRef}>
                     {this.createTiles()}
                 </div>
