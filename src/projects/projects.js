@@ -20,13 +20,13 @@ class Projects extends Component {
             {
                 title: <img src={Logo} alt='Logo' />,
                 header: 'Personal Website',
-                content: 'Used this website as an intro to working with React. I tried to implement most of the core functionality and animations from scratch instead of importing premade react components. All code for the site is on my github which is linked through the footer at bottom of the page',
+                content: 'Used this website as an intro to working with React. I tried to implement most of the core functionality and animations from scratch instead of importing premade react components. All code for the site is on my github which is linked through the footer at the bottom of the page',
                 id: 0 
             },
             {
                 title: 'React Phone Controller',
                 header: 'React Phone Controller',
-                content: 'Project that allowed for developer to download the react components and create a web game controller. The controller had empty handler methods for joystick and gesture panels that the developer could fill in for desired functionality. The code is on my github under the controller repository. Link to my github is in the footer at the bottom of the page',
+                content: 'Project that allowed for a developer to download the react components and create a web game controller. The controller had empty handler methods for joystick and gesture panels that the developer could fill in for desired functionality. The code is on my github under the controller repository. Link to my github is in the footer at the bottom of the page',
                 id: 1
             }, 
             {
