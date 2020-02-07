@@ -14,3 +14,12 @@
         margin-bottom: 15px;
     }
 }
+
+@media (max-width: 568px) {
+
+    h1, p, h4, button {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+}

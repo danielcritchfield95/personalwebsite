@@ -10,6 +10,7 @@
     #Intro {
         display: flex;
         flex-direction: column;
+        overflow: scroll;
     }
 
     .Item {
@@ -49,6 +50,26 @@
     #Me {
         height: 40vh;
         padding-top: 50px;
+    }
+
+    #Outro .Container {
+        padding: 5px;
+    }
+
+}
+
+@media (max-width: 568px) {
+
+    #HomeName {
+        font-size: 2.5rem;
+    }
+
+    #Intro p {
+        font-size: 0.75rem;
+    }
+
+    #Intro p:first-child {
+        font-size: 2rem;
     }
 
 }

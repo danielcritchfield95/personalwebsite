@@ -22,7 +22,7 @@
 
     .AboutContent p, .AboutContent h3 {
         margin: auto;
-        padding: 0 20px;
+        padding: 0 20px !important;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -32,7 +32,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        object-fit: contain;
+    }
+
+    .ProfessionalImage img {
+        width: 80%;
     }
 
     #AboutFooter {
